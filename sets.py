@@ -1,6 +1,6 @@
 def union(A, B):
-    join = [x for x in B if x not in A]
-    return A + join
+    return A + [x for x in B if x not in A]
+    
 
 def intersect(A, B):
     return[x for x in B if x in A]

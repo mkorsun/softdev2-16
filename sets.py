@@ -9,9 +9,7 @@ def setdiff(A, B):
     return[x for x in A if x not in B]
 
 def symdiff(A, B):
-    U = setdiff(A,B)
-    V = setdiff(B,A)
-    return union(U,V)
+    return union(setdiff(A,B), setdiff(B,A))  
 
 def cartprod(A, B):
     return[[x,y] for x in A for y in B]
